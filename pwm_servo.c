@@ -2,8 +2,8 @@
 #include "pico/stdlib.h"
 #include "hardware/pwm.h"
 
-#define SERVO_PIN 22   // GPIO usada para controlar o servo
-#define PWM_FREQUENCY 50  // Frequência do PWM (50Hz)
+#define SERVO_PIN 22   
+#define PWM_FREQUENCY 50  
 #define PWM_WRAP 20000  // Período do PWM em microssegundos (20ms)
 
 void set_servo_pulse(uint slice, uint channel, uint pulse_width) {
@@ -19,9 +19,9 @@ int main() {
     uint slice_num = pwm_gpio_to_slice_num(SERVO_PIN);
     uint channel = pwm_gpio_to_channel(SERVO_PIN);
 
-    pwm_set_wrap(slice_num, PWM_WRAP);  // Define o período do PWM (20ms)
-    pwm_set_clkdiv(slice_num, 125.0);   // Reduz a frequência do clock para ajustar o PWM
-    pwm_set_enabled(slice_num, true);   // Habilita o PWM
+    pwm_set_wrap(slice_num, PWM_WRAP);  
+    pwm_set_clkdiv(slice_num, 125.0);   
+    pwm_set_enabled(slice_num, true); 
 
     // Movendo o servo para 180°, 90° e 0° com intervalo de 5 segundos
     printf("Movendo para 180 graus...\n");
