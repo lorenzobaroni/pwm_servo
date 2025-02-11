@@ -5,7 +5,7 @@ Este projeto implementa o **controle de um servomotor** utilizando **modulação
 
 ## 🎥 Demonstração
 O vídeo com a execução da simulação pode ser acessado em:
-[🔗 Link para o vídeo]()
+[🔗 Link para o vídeo](https://www.youtube.com/watch?v=8tvOLoBXICI&ab_channel=LorenzoGiuseppeOliveiraBaroni)
 
 ## 📜 Requisitos
 - **Raspberry Pi Pico W**
